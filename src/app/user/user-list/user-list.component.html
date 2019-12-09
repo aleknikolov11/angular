@@ -1,0 +1,7 @@
+<div *ngFor="let user of users">
+    <p>
+        Name: {{user.name}}<br/>
+        Surname: {{user.surname}}<br/>
+        <span *ngIf="user.description !== ''">Description: {{user.description}}</span>
+    </p>
+</div>

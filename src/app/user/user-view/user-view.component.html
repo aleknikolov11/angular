@@ -1,0 +1,9 @@
+<div *ngIf="!msg && userData;else errorMsg">
+  Name: {{ userData.name }} <br/>
+  Surname: {{ userData.surname }} <br/>
+  <span *ngIf="userData.description">Description: {{ userData.description }}</span>
+</div>
+
+<ng-template #errorMsg>
+  {{msg}}
+</ng-template>

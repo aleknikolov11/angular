@@ -1,0 +1,8 @@
+<form *ngIf="!msg" [formGroup]="form" (ngSubmit)="submit()">
+    Name: <input type="text" formControlName="name"/><br/>
+    Surname: <input type="text" formControlName="surname"/><br/>
+    Description: <textarea formControlName="description"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+{{msg}}
